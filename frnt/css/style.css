@@ -1,0 +1,320 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*-----------------NAV MENU-----------------*/
+.header-item{
+    display: flex;
+    flex:1;
+    text-transform: uppercase;
+    justify-content: space-evenly
+    
+}
+.header-menu{
+    position: relative;
+}
+
+.header-menu_logo{
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    left: 10px;
+    border-radius: 5px;
+    transition: transform 1s ease;
+}
+.header-menu_logo:hover {
+    transform: rotate(20deg);
+}
+.aaa{
+    color: black;
+}
+.header-menu nav{
+    background-color: rgb(255, 255, 255);
+    height:100px;
+    border-bottom:blueviolet solid 2px;  
+}
+
+.header-menu ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style: none;   
+    }
+
+.header-menu ul ul {
+        padding: 5px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        display: none;
+        position: absolute;
+        top:100%;
+        list-style-type: none;
+        border:blueviolet solid 2px;
+        
+              
+}
+
+.header-menu ul li {
+    background-color: #ffffff;
+    width: 25%;
+    border-radius: 5px;
+    border:2px solid blueviolet;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    }
+.header-menu ul ul li {
+        background-color: #ffffff;
+        width: 100%;
+        border: 0px;
+        text-align: left;
+        
+    }
+    .header-menu ul ul li a {
+        color: black;
+        
+    }
+
+.header-menu a {
+    display:block;
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    line-height: 50px;
+    text-decoration:none;
+}
+
+.header-menu ul li a:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header-menu ul li a::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: 0px;
+    content: '';
+    color: transparent;
+    background:blueviolet;
+  }
+
+  .header-menu ul li a:hover::before{
+    opacity: 0.2;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    
+  }
+/* отображаем выпадающий список при наведении */
+.header-menu ul li:hover > ul {
+    display:block; 
+}
+
+.header-menu ul ul li a{
+    display:block;
+    color:rgb(0, 0, 0);
+    font-size:10px;
+    line-height: 20px;
+    text-decoration:none;
+}
+.header-menu ul ul li a:hover{ 
+    transition: all 0.3s ease-in-out;
+    color: rgb(0, 0, 0);
+}
+
+.main-wrapper{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*-----------------Footer-----------------*/
+footer{
+    border-top: solid 2px blueviolet;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+/*-----------------SIGN UP PAGE AND SIGN IN-----------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+body >div>div
+{
+    margin: 20px 0 20px 0;
+}
+body >div>div>h1{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+    
+}
+body >div>div>h1>a{
+    text-decoration: none;
+    color: black;
+}
+body >div>div>h1>a:hover{
+    opacity: 0.5;
+}
+.container {
+    padding: 16px;
+    background-color: #eee;
+    max-width: 40%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #ffffff;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(255, 255, 255);
+   
+}
+ 
+hr {
+    border: 1px solid blueviolet;
+    margin-bottom: 25px;
+    background-color: blueviolet;
+}
+
+/* СТИЛЬ КНОПКИ Регистрационой страницы  */
+
+.container-item{
+    text-align: center;
+}
+
+.container-item__registerbtn {
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 50px;
+    padding: 16px 20px;
+    border: none;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.container-item__registerbtn:hover {
+    opacity: 1;
+}
+
+.signin {
+    background-color: #eee;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-Bottom-left-radius: 10px;
+    border-Bottom-right-radius: 10px;
+}
+
+/* NEWS MAIN PAGE */
+
+.main-wrapper__article{
+    width:80%;
+    height: auto;
+    background-color: #eee;
+}
+
+.article-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+    background-color: #eee;
+    min-height: auto;
+    gap: 20px;
+
+}
+.article-grid-item__box1 {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .article-grid-item__box2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  .article-grid-item__box3{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    background-color: rgb(255, 255, 255);
+
+  }
+
+  .aside-wrapper{
+    
+    flex-direction: column;
+    display: flex;
+    width: 20%;
+    height: auto;
+    background-color:#eee;
+}
+.aside-wrapper__block{
+    height: 30%;
+    width: 100%;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.item-img__box1 img
+{
+    padding: 10px;
+    max-width: 50%;
+    max-height: 50%;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.item-title__box1{
+    padding: 10px;
+    float: top;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
